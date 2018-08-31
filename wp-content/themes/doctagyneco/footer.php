@@ -16,41 +16,34 @@
 			'after_title'   => '<div class="enigma-footer-separator"></div></div>' );
 			the_widget('WP_Widget_Pages', null, $args);			
 			} ?>
+			<?php if($wl_theme_options['footer_section_social_media_enbled'] == '1') { ?>		
+				<div class="enigma_footer_social_div">
+					<ul class="social">
+						<?php if($wl_theme_options['fb_link']!='') { ?>
+						<li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
+						<?php } if($wl_theme_options['twitter_link']!='') { ?>
+						<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>	
+						<?php } if($wl_theme_options['youtube_link']!='') { ?>
+						<li class="youtube" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
+						<?php } ?>
+					</ul>
+				</div>	
+			<?php } ?>	
 		</div>		
 	</div>	
 </div>
+<!-- footer-bottom -->
 <div class="enigma_footer_area">
 		<div class="container">
 			<div class="col-md-12">
-			<p class="enigma_footer_copyright_info wl_rtl" >
-			<?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }
-			if($wl_theme_options['developed_by_text']) { echo "|" .esc_attr($wl_theme_options['developed_by_text']); } ?>
-			<a target="_blank" rel="nofollow" href="<?php if($wl_theme_options['developed_by_link']) { echo esc_url($wl_theme_options['developed_by_link']); } ?>"><?php if($wl_theme_options['developed_by_weblizar_text']) { echo esc_attr($wl_theme_options['developed_by_weblizar_text']); } ?></a></p>
-			<?php if($wl_theme_options['footer_section_social_media_enbled'] == '1') { ?>
-			<div class="enigma_footer_social_div">
-				<ul class="social">
-					<?php if($wl_theme_options['fb_link']!='') { ?>
-					   <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>				
-					<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } if($wl_theme_options['youtube_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
-	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
-	                <?php } if($wl_theme_options['instagram']!='') { ?>
-					<li class="facebook" data-toggle="tooltip" data-placement="top" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
-	                <?php } if($wl_theme_options['vk_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="vk"><a href="<?php echo esc_url($wl_theme_options['vk_link']) ; ?>"><i class="fa fa-vk"></i></a></li>
-	                <?php } if($wl_theme_options['qq_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="top" title="qq"><a href="<?php echo esc_url($wl_theme_options['qq_link']) ; ?>"><i class="fa fa-qq"></i></a></li>
-	                <?php } if($wl_theme_options['whatsapp_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="top" title="whatsapp"><a href="tel:<?php echo esc_attr($wl_theme_options['whatsapp_link']) ; ?>""><i class="fa fa-whatsapp"></i></a></li>
-	                <?php } ?>
-				</ul>
-			</div>
-			<?php } ?>			
+				<p class="enigma_footer_copyright_info wl_rtl" >
+				<span class="copyright_info_left"><?php if($wl_theme_options['footer_customizations']) { echo esc_attr($wl_theme_options['footer_customizations']); }
+				if($wl_theme_options['developed_by_text']) { echo " ".esc_attr($wl_theme_options['developed_by_text']); }?>
+				<a target="_blank" rel="nofollow" href="<?php if($wl_theme_options['developed_by_link']) { echo esc_url($wl_theme_options['developed_by_link']); } ?>">
+				<?php if($wl_theme_options['developed_by_admin_text']) { echo esc_attr($wl_theme_options['developed_by_admin_text']); } ?>
+				</a></span>
+				<span class="copyright_info_right"><?php if($wl_theme_options['footer_link']) { echo esc_attr($wl_theme_options['footer_link']); }?><i class="fa fa-home"></i></span>
+				</p>
 			</div>		
 		</div>		
 </div>	

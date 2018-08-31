@@ -15,7 +15,7 @@
 	}
 	
 	.carousel-caption {
-	top: 25%;
+		top: 38%;
 	}
 	.boxed .carousel-caption {
 	top: 20%;
@@ -219,12 +219,11 @@
 	.carousel-indicators{
 		display:none;
 	}
-	.carousel-text .enigma_blog_read_btn{
-		display:none;
-	}
+	
 	.carousel-caption {
 	top: 20%;
 	}
+	
 }
 
 

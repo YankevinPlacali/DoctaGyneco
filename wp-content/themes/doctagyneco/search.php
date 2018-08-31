@@ -6,7 +6,7 @@ if($wl_theme_options['breadcrumb']!='') { ?>
 		<div class="row">
 		<?php if(have_posts()) :?>
 			<div class="col-md-12">
-			<h1><?php printf( __( 'Search Results for: %s', 'enigma' ), '<span>' . get_search_query() . '</span>'  ); ?>
+			<h1><?php printf( __( 'Résultat de recherche pour: %s', 'enigma' ), '<span>' . get_search_query() . '</span>'  ); ?>
 			</h1>
 			</div>
 		<?php endif; ?>

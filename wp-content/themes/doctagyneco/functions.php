@@ -18,13 +18,16 @@
 	//Sane Defaults
 	function weblizar_default_settings()
 {
-	$ImageUrl =  esc_url(get_template_directory_uri() ."/images/Clockin-Pro.jpg");
-	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/logoSite2.jpeg");
-	$ImageUrl3 = esc_url(get_template_directory_uri() ."/images/logoSite3.jpeg");
-	$ImageUrl4 = esc_url(get_template_directory_uri() ."/images/portfolio1.png");
-	$ImageUrl5 = esc_url(get_template_directory_uri() ."/images/portfolio2.png");
-	$ImageUrl6 = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
+	$ImageUrl =  esc_url(get_template_directory_uri() ."/images/slide/slide.jpg");
+	$ImageUrl2 = esc_url(get_template_directory_uri() ."/images/slide/slide2.jpg");
+	$ImageUrl3 = esc_url(get_template_directory_uri() ."/images/slide/slide3.jpg");
+	
+	$ImageUrl4 = esc_url(get_template_directory_uri() ."/images/service.png");
+	$ImageUrl5 = esc_url(get_template_directory_uri() ."/images/service2.png");
+	$ImageUrl6 = esc_url(get_template_directory_uri() ."/images/service3.png");
 	$ImageUrl7 = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
+	$ImageUrl8 = esc_url(get_template_directory_uri() ."/images/portfolio5.png");
+	$ImageUrl9 = esc_url(get_template_directory_uri() ."/images/article.jpeg");
 	$wl_theme_options=array(
 			//Logo and Fevicon header
 			'title_position'=>'',
@@ -46,14 +49,14 @@
 
 			'slider_image_speed' => '',
 			'slide_image_1' => $ImageUrl,
-			'slide_title_1' => __('Slide Title', 'enigma' ),
-			'slide_desc_1' => __('Lorem Ipsum is simply dummy text of the printing', 'enigma' ),
-			'slide_btn_text_1' => __('Read More', 'enigma' ),
+			'slide_title_1' => __('Bienvenue!', 'enigma' ),
+			'slide_desc_1' => __('Veuillez vous connectez afin de pouvoir communiquer avec un medecin', 'enigma' ),
+			'slide_btn_text_1' => __('Se connecter', 'enigma' ),
 			'slide_btn_link_1' => '#',
 			'slide_image_2' => $ImageUrl2,
-			'slide_title_2' => __('variations of passages', 'enigma' ),
-			'slide_desc_2' => __('Contrary to popular belief, Lorem Ipsum is not simply random text', 'enigma' ),
-			'slide_btn_text_2' => __('Read More', 'enigma' ),
+			'slide_title_2' => __('Doctagyneco', 'enigma' ),
+			'slide_desc_2' => __('Decouvrer nos offres', 'enigma' ),
+			'slide_btn_text_2' => __('Se connecter', 'enigma' ),
 			'slide_btn_link_2' => '#',
 			'slide_image_3' => $ImageUrl3,
 			'slide_title_3' => __('Contrary to popular ', 'enigma' ),
@@ -82,25 +85,26 @@
 			
 			'email_id' => 'doctagyneco.com',
 			'phone_no' => '0159753586',
-			'footer_customizations' => __(' &#169; 2016 Enigma Theme', 'enigma' ),
-			'developed_by_text' => __('Theme Developed By', 'enigma' ),
-			'developed_by_weblizar_text' => __('Weblizar Themes', 'enigma' ),
-			'developed_by_link' => 'http://weblizar.com/',
+			'footer_customizations' => __(' &#169; 2018 Doctagyneco', 'enigma' ),
+			'footer_link' => __('Doctagyneco.com', 'enigma' ),
+			'developed_by_text' => __('From', 'enigma' ),
+			'developed_by_admin_text' => __('Titus Web design home', 'enigma' ),
+			'developed_by_link' => 'http://',
 			'services_home'=>'1',
-			'home_service_heading' => __('Our Services', 'enigma' ),
-			'service_1_title'=>__("Idea",'enigma' ),
-			'service_1_icons'=>"fa-google",
-			'service_1_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'enigma' ),
+			'home_service_heading' => __('Nos Services', 'enigma' ),
+			'service_1_title'=>__("Conseils nutritions",'enigma' ),
+			'service_1_icons'=>"fa-plus",
+			'service_1_text'=>__("Des termes comme: Asthénozoospermie, Aménorrhée, Acné de grossesse ne vous en dittes rien du tout? Notre bibliotheque vous en dira plus.", 'enigma' ),
 			'service_1_link'=>"#",
 			
-			'service_2_title'=>__('Records', 'enigma' ),
-			'service_2_icons'=>"fa-database",
-			'service_2_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'enigma' ),
+			'service_2_title'=>__('Prénoms pour bébés', 'enigma' ),
+			'service_2_icons'=>"fa-child",
+			'service_2_text'=>__("La suivie de l' évolution de votre grossesse est très primordiale pour la survie et la bonne santé non seulement de votre bébé mais aussi de vous même", 'enigma' ),
 			'service_2_link'=>"#",
 			
-			'service_3_title'=>__("WordPress", 'enigma' ),
-			'service_3_icons'=>"fa-wordpress",
-			'service_3_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'enigma' ),
+			'service_3_title'=>__("Encyclopédie", 'enigma' ),
+			'service_3_icons'=>"fa-user-md",
+			'service_3_text'=>__("Avez-vous des questions particulières? Ils vous êtes possible de demander à parler avec un médécin.", 'enigma' ),
 			'service_3_link'=>"#",			
 			'product_title'=>'',
 			
@@ -120,11 +124,15 @@
 			'port_4_img'=> $ImageUrl7,
 			'port_4_title'=>__('randomised', 'enigma' ),
 			'port_4_link'=>'#',
+			'port_5_img'=> $ImageUrl8,
+			'port_5_title'=>__('randomised', 'enigma' ),
+			'port_5_link'=>'#',
 			//BLOG Settings
 			'blog_home' => '1',
-			'blog_title'=>__('Latest Blog', 'enigma' ),
+			'blog_title'=>__('Articles', 'enigma' ),
 			'blog_speed'=>'2000',
 			'blog_category'=>'',
+			'article_img'=>$ImageUrl9,
 			
 			//Google font style
 			'main_heading_font' => 'Open Sans',

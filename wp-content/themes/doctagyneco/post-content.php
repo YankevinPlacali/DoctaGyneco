@@ -1,22 +1,21 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class('enigma_blog_full'); ?>>
 	<ul class="blog-date-left">
-		<li class="enigma_post_date">
-		<?php if ( ('d M  y') == get_option( 'date_format' ) ) : ?>
-		<span class="date"><?php echo get_the_date('d'); ?></span><h6><?php echo get_the_date('M  y'); ?></h6>
-		<?php else : ?>
-		<span class="date"><?php echo get_the_date(); ?></span>
-		<?php endif; ?>
-		</li>
-		<li class="enigma_post_author enigma_blog_thumb_wrapper_showcase"><?php echo get_avatar(get_the_author_meta( 'ID' ),96); ?>
-		<div class="enigma_blog_thumb_wrapper_showcase_overlays">
+		<li class="enigma_post_author enigma_blog_thumb_wrapper_showcase">
+			<?php if(get_the_author_meta('ID') != ''): ?>
+			<?php echo get_avatar(get_the_author_meta( 'ID' ),96); ?>
+			<div class="enigma_blog_thumb_wrapper_showcase_overlays">
 				<div class="enigma_blog_thumb_wrapper_showcase_overlay_inner ">
 					<div class="enigma_blog_thumb_wrapper_showcase_icons1">
 						<a title="<?php the_title_attribute(); ?>" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php echo get_the_author(); ?></a>
 					</div>
 				</div>
 			</div>
+			<?php else: ?>
+			<div class="no_avatar">
+				<a title="<?php the_title_attribute(); ?>" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php echo get_the_author(); ?></a>
+			</div>
+			<?php endif; ?>
 		</li>
-		<li class="enigma_blog_comment"><i class="fa fa-comments-o"></i><h6><?php comments_popup_link( '0', '1', '%', '', '-'); ?></h6></li>
 	</ul>
 	<div class="post-content-wrap">
 		<?php if(has_post_thumbnail()): 
@@ -46,8 +45,8 @@
 		</div>
 		<div class="col-md-6 col-sm-3">
 		<?php if(get_the_category_list() != '') { ?>
-		<p class="enigma_cats"><?php echo __("Category : ",'enigma');
-		the_category(' , '); ?></p>
+		<p class="enigma_cats"><span><?php echo __("Category : ",'enigma');
+		the_category(' , '); ?></span></p>
 		<?php } ?>
 		</div>
 		</div>
@@ -66,8 +65,18 @@
 	          );
 	          wp_link_pages( $defaults ); ?>
 		</div>
+		<!-- post information -->
+		<div class="post-info">
+			<ul class="enigma_blog_thumb_date">
+				<li><i class="fa fa-clock-o"></i>
+				<?php if ( ('d M  y') == get_option( 'date_format' ) ) : ?>
+				<?php echo get_the_date('F d Y'); ?>
+				<?php else : ?>
+				<?php echo get_the_date(); ?>
+				<?php endif; ?>
+				</li>
+				<li><i class="fa fa-comments-o"></i><?php comments_popup_link( '0', '1', '%', '', '-'); ?></li>
+			</ul>
+		</div>
 	</div>
 </div>	
-<div class="push-right">
-<hr class="blog-sep header-sep">
-</div>
