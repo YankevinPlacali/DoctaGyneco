@@ -22,7 +22,7 @@
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
 .dropdown-menu .active a {	
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(200, 80, 147);
 }
 .collapse ul.nav li.current-menu-parent .dropdown-toggle, .collapse ul.nav li.current-menu-item .dropdown-toggle,
 .navbar-default .navbar-collapse ul.nav li.current-menu-parent .dropdown-toggle,.navbar-default .navbar-collapse ul.nav li.current-menu-item .dropdown-toggle
@@ -41,17 +41,17 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(200, 80, 147);   /*menu-bar menu*/
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	background-color: rgba(0, 0, 0, 0.3) ;
-	font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
+	background-color: rgb(200, 80, 147);
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif !important;
 }
 
 .dropdown-menu {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgb(200, 80, 147);
 	font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
 }
 /** headings titles css ***/
@@ -595,7 +595,7 @@ color: white;
 	padding-bottom: 1em;
 }
 .name_directory_index a{
-	margin-right: 5px;
+	margin-right: 15px;
 	color: #31A3DD;
 	font-size: 15px;
 }

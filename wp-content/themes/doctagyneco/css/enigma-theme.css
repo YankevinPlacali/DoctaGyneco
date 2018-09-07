@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
 #header_shadow {
 	background: url('../images/shadow.png') no-repeat top center;
 	position: absolute;
@@ -42,11 +41,11 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 99;
 	width:100%;
 }
-	.navbar-default {
-	background-color: transparent;
-	border:0;
-	}
 
+.navbar-default {
+background-color: transparent;
+border:0;
+}
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	-webkit-border-radius: 0px;
@@ -55,7 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 	color:#fff;
 	font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
 	font-weight: normal;
-	font-size:15px;
+	font-size: 17px;
+	font-weight: 600;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 	color:#fff;
 	font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
 	font-weight: normal;
-	font-size:15px;
+	font-size: 17px;
 }
 .navbar-default .navbar-nav > li {
 margin-right:7px;
@@ -85,15 +85,22 @@ font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
 	font-weight: normal;
 	font-size:15px;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	color:#fff;
-	font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif !important;
 	font-weight: normal;
-	font-size:15px;
+	font-size: 17px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
 .dropdown-menu {
@@ -132,6 +139,7 @@ font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
 -moz-transition: padding 400ms;
 transition: padding 400ms;
 font-family: 'Times New Roman',Arial, Helvetica, sans-serif !important;
+border-top: 1px solid #fff;
   
 }
 .dropdown-menu > li > a:hover,
@@ -266,6 +274,8 @@ color: #999;
 	font-size: 18px !important;
 	float:right;
 	margin-right:-13px;
+	padding-top: 3px;
+	margin-left: 3px;
 }
 
 .dropdown-submenu{
@@ -307,7 +317,7 @@ color: #999;
 **************************************************************************************************************************/
 
 .enigma_header_breadcrum_title{
-	margin-bottom:70px;
+	margin-bottom: 5px;
 	background:#edf0f2;
 	opacity:1;
 	padding-top:8px;

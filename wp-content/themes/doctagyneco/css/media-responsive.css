@@ -69,76 +69,75 @@
 	
 }	
 @media only screen and (min-width: 767px) and (max-width: 992px) {
-.logo{
-	text-align:center;
-	padding-top:15px;
-	padding-bottom:0px;
+	.logo{
+		text-align:center;
+		padding-top: 15px;
+		padding-bottom:0px;
 	}
 	.head-contact-info{
-	display: block;
-	text-align: center;
-	padding-top:5px;
-	padding-bottom:2px;
-	padding-left:0;
-}
+		display: block;
+		text-align: center;
+		padding-top:5px;
+		padding-bottom:2px;
+		padding-left:0;
+	}
 
 	.social{
-	display: block;
-	text-align: center;
-	padding-top:5px;
-	padding-bottom:5px;
-	padding-left: 0px;
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom:5px;
+		padding-left: 0px;
 	}
 	.navbar-default .navbar-nav > li > a{
-	color: #000;
-	border-radius: 5px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 8px;
-	padding-right: 8px;
-	text-transform: uppercase;
-	font-family: 'Arimo',Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-size:15px;
+		color: #000;
+		border-radius: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+		text-transform: none;
+		font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+		font-size: 15px;
 	}
 	.navbar {
 		margin-bottom: 0px; 
-
 	}
+	
 	#enigma_nav_top.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-	border-bottom: 2px solid #F7F5F5;
-	z-index: 99997;
-	left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		border-bottom: 2px solid #F7F5F5;
+		z-index: 99997;
+		left: 0;
 	}
 	.carousel-caption{
-	top:40px;
+		top:40px;
 	}
 	.carousel-text h1 {
-	font-size: 1.4em;
-	padding:10px;
+		font-size: 1.4em;
+		padding:10px;
 	}
 	.carousel-list li {
-	color: #fff;
-	font-size: 0.9em;
-	margin-bottom: 10px;
-	overflow: hidden;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600; 
-	text-transform: uppercase;
+		color: #fff;
+		font-size: 0.9em;
+		margin-bottom: 10px;
+		overflow: hidden;
+		font-family: 'Times New Roman', sans-serif;
+		font-weight: 200; 
+		text-transform: none;
 	}
 	.carousel-list {
-	top: 60px;
-	margin: 0px auto;
+		top: 60px;
+		margin: 0px auto;
 	}
 	.enigma_callout_area{
-		text-align:center;
+		text-align: center;
 	}
 	.enigma_callout_area p{
-		margin-bottom:20px;
-		padding:0px;
+		margin-bottom: 20px;
+		padding: 0px;
 	}
 	.enigma_callout_btn {
 	float: none;	
@@ -146,21 +145,19 @@
 	
 	/*** blog full width **/
 	.enigma_sidebar_left_side{
-
-	float:none;
-
+		float: none;
 	}
 	.enigma_blog_right_side{
-	float:none;
+	float: none;
 	}
 	.post-content-wrap {
-	width:100%;
+	width: 100%;
 	}
 	.post-content-wrap-right {
-	width:100%;
+	width: 100%;
 	}
 	.blog-date-left{
-		display:flex;
+		display: flex;
 		margin-bottom: 0px;
 	}
 	.blog-date-right{
@@ -170,7 +167,7 @@
 	
 	.enigma_fuul_blog_detail_padding {
 		padding-left: 0px;
-		padding-top:20px;
+		padding-top: 20px;
 	}
 	.enigma_blog_full .enigma_blog_thumb_wrapper_showcase {
 		margin-bottom: 0px;
@@ -211,28 +208,28 @@
 	}
 	/* gallery */
 	.enigma_gallery_blog{
-	width: 33.3%;
-	margin-right: 0;
-	margin-bottom: 0;
-	float: left;
+		width: 33.3%;
+		margin-right: 0;
+		margin-bottom: 0;
+		float: left;
 	}
 	.carousel-indicators{
 		display:none;
 	}
 	
 	.carousel-caption {
-	top: 20%;
+		top: 20%;
 	}
 	
 }
 
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.dropdown-menu{
-width:100%;
-float:none;
-position:static !important;
-}
+	.dropdown-menu{
+	width:100%;
+	float:none;
+	position:static !important;
+	}
 .logo{
 	text-align:center;
 	padding-top:15px;
