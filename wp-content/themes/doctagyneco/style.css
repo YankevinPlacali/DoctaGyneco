@@ -203,6 +203,28 @@ p , .textwidget{
 	display: inline;
 }
 
+/*logo{
+	text-align:left;
+	padding-bottom:0px;
+	font-family: 'Times New Roman', sans-serif;
+}
+.logo a{
+	font-weight: 600;
+	font-family: 'Times New Roman', sans-serif;
+	margin-bottom:10px;
+	font-size: 40px;
+	color: #fff;
+}
+.logo a:hover{
+	color: #fff;
+}
+.logo p{
+	font-family: 'Times New Roman', sans-serif;
+	margin-top:5px;
+	color: #fff;
+	font-size: 1.4em;	
+}*/
+
 .social{
 	display: block;
 	text-align: left;
@@ -279,44 +301,6 @@ p , .textwidget{
 .social li.youtube:hover{
 	background-position: 0 -100%;
 	background-color:#C92228;
-}
-
-/* header search customizing */
-.hsearch  {
-	float: right;
-	margin-right: 3em;
-}
-
-.hsearch  #searchform .form-control {
-    display: block;
-    width: 90%;
-    height: 37px;
-    padding: 2px 5px;
-    font-size: 13px;
-}
-
-.hsearch #searchform  .btn {
-    font-size: 18px;
-    font-weight: normal;
-    height: 38px;
-    width: 62px;
-}
-
-.hsearch .input-group-btn > .btn {
-    position: absolute;
-    left: 160px;
-    bottom: 0px;
-	border: 1px solid #ccc;
-	border-left: none;
-}
-
-.hsearch .btn-search {
-    background: rgba(200, 80, 147) !important;
-}
-
-.hsearch .btn:hover, .btn:focus {
-    color: #777;
-    text-decoration: none;
 }
 
 .enigma_heading_title {
@@ -1336,9 +1320,9 @@ transition: all 0.3s ease 0s;
 
 .enigma_blog_full{
 	margin-bottom: 20px;
-	margin-top: 0px;
+	margin-top: 10px;
 	overflow:auto;
-	padding: 20px 5px 5px 20px;
+	padding: 20px;
 	float: none;
 	border: 3px  solid #E9E9E9;
 }
@@ -1487,7 +1471,6 @@ transition: all 0.3s ease 0s;
 .enigma_fuul_blog_detail_padding{
 	padding-top: 10px;
 	padding-left: 20px;
-	padding-right: 0;
 	float: left;
 	width: 100%;
 }
@@ -2328,47 +2311,6 @@ margin-bottom: 20px;
 	color:#f8504b;
 }
 
-/* button ovulation calculator area Section Css------------------------------------------------------------ */
-.ovcalcult_table select {
-	 border: 1px solid #31A3DD;
-	 border-radius: 0;
-	-webkit-appearance: none;
-	background-color: #fff;
-	margin: 2px 5px 5px 4px;
-	padding: 4px;
-}
-
-.ovcalcult_table  span {
-	padding: 7em 1em;
-}
-
-.ovcalcult_table  form h3 {
-	color: #31A3DD;
-}
-
-.ovcalcult_table  .desc {
-	margin-bottom: 3em;
-}
-
-.ovcalcult_table input[type=submit] , input[type=button]{
-	font-weight: 600;
-	font-family: 'Times New Roman', sans-serif;
-	display: inline-block;
-	padding: 5px 20px;
-	margin-bottom: 0;
-	font-size: 18px;
-	line-height: 1.428571429;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	background-image: none;
-	border: 2px solid transparent;
-	border-color: #31A3DD;
-	background-color: #ffffff;
-	margin-top: 2em;
-}
-
 /* Footer area Section Css------------------------------------------------------------ */
 .enigma_footer_area{
     padding: 10px 0 5px;
@@ -2839,10 +2781,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		float:right;
 	}
 	
-	.hsearch {
-		display: none;
-	}
-	
 	.carousel-indicators {
 		display: none;
 	}
@@ -2850,7 +2788,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 	.carousel-caption  .carousel-text  .enigma_blog_read_btn {
 		font-size: 14px;
 		margin-bottom: 5px;
-		font-family: Times New Roman;
 	}
 	.carousel-caption  .carousel-text  .enigma_blog_read_btn_slide {
 		font-size: 14px;
@@ -2882,7 +2819,7 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 	}
 }
 
-@media(min-width: 767px)  and (max-width: 992px) {
+@media(max-width: 992px) {
 	
 	.site-topbar-left {
 		padding: 30px 0 0 25px;
@@ -2923,10 +2860,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		font-size: 1.3em;
 		padding-bottom: 2px;
 		color: #fff;
-	}
-	
-	.hsearch {
-		display: none;
 	}
 	
 	.carousel-caption  .carousel-text  .enigma_blog_read_btn {
@@ -3004,7 +2937,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		font-size: 22px;
 		margin-left: 120px;
 	}
-	
 }
 
 @media(max-width:768px) {
@@ -3042,10 +2974,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		width: 100% !important;
 		height: 25% !important;
 	}
-	
-	.hsearch  {
-		margin-top: 2em;
-	}
 	.logo img {
 		display: inline-block;
 	}
@@ -3055,6 +2983,7 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		padding: 3px;
 		margin-bottom: 3px;
 	}
+	
 	
 	/*slideshow custom */
 	.carousel .carousel-inner .item img{
@@ -3179,6 +3108,7 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		font-size: 16px;
 	}
 	
+	
 	.header_section h1 { 
 		font-size: 24px;
 		margin: 23px 0 7px 0;
@@ -3197,11 +3127,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		display: inline;
 		margin-right: 2px;
 		font-size: .6em;
-	}
-	
-	/* header search customizing */
-	.hsearch  {
-		margin-top: 2em;
 	}
 	
 	/*slideshow custom */
@@ -3315,21 +3240,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 		margin-right: 10px;
 		font-size: 15px;
 	}
-	/* header search customizing */
-	.hsearch  {
-		float: none;
-		margin-right: 3em;
-		margin-top: 1em;
-	}
-	
-	.hsearch  #searchform .form-control {
-		height: 34px;
-	}
-
-	.hsearch #searchform  .btn {
-		font-size: 15px;
-		height: 35px;
-	}
 	
 	/*slideshow custom */
 	.carousel .carousel-inner .item img{
@@ -3401,89 +3311,6 @@ li.enigma_post_author.enigma_blog_thumb_wrapper_showcase {
 	}
 	.enigma_project_section .enigma_heading_title h3 {
 		border-bottom: 3px solid #31A3DD;
-	}
-	
-	/* button ovulation calculator area Section Css------------------------------------------------------------ */
-	.ovcalcult_table select {
-		margin: 8px 2px 5px 16px;
-		padding: 2px;
-	}
-
-	.ovcalcult_table  span {
-		padding: 4em 1em;
-	}
-
-	.ovcalcult_table  form h3 {
-		font-size: 20px;
-		font-weight: 500;
-	}
-
-	.ovcalcult_table  .desc {
-		margin-bottom: 3em;
-		font-size: 14px;
-	}
-
-	.ddpredct_table input[type=submit] , input[type=button]{
-		padding: 3px 10px;
-		font-size: 14px;
-		margin-top: 2em;
-	}
-	
-	.ddpredct_table select {
-		margin: 8px 2px 5px 16px;
-		padding: 2px;
-	}
-
-	.ddpredct_table  span {
-		padding: 4em 1em;
-	}
-
-	.ddpredct_table  form h3 {
-		font-size: 20px;
-		font-weight: 500;
-	}
-
-	.ddpredct_table  .desc {
-		margin-bottom: 3em;
-		font-size: 14px;
-	}
-
-	.ddpredct_table input[type=submit] , input[type=button]{
-		padding: 3px 10px;
-		font-size: 14px;
-		margin-top: 2em;
-	}
-	
-	
-	.nmpredct_table input[type=submit] , input[type=button]{
-		padding: 3px 10px;
-		font-size: 14px;
-		margin-top: 2em;
-	}
-	
-	.nmpredct_table select {
-		margin: 8px 2px 5px 16px;
-		padding: 2px;
-	}
-
-	.nmpredct_table  span {
-		padding: 4em 1em;
-	}
-
-	.nmpredct_table  form h3 {
-		font-size: 20px;
-		font-weight: 500;
-	}
-
-	.nmpredct_table  .desc {
-		margin-bottom: 3em;
-		font-size: 14px;
-	}
-
-	.nmpredct_table input[type=submit] , input[type=button]{
-		padding: 3px 10px;
-		font-size: 14px;
-		margin-top: 2em;
 	}
 	
 	/* footer */

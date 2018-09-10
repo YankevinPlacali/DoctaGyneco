@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<meta charset="<?php bloginfo('charset'); ?>" />	
 	<?php $wl_theme_options = weblizar_get_options(); ?>
+
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<?php wp_head(); ?>
 </head>
@@ -40,10 +41,10 @@
 									<span data-toggle="tooltip" data-placement="bottom" title="phone us"><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><i class="fa fa-phone"></i></a></span>
 									<?php } ?>
 									<?php if($wl_theme_options['fb_link']!='') { ?>
-									<span class="facebook" data-toggle="tooltip" data-placement="bottom" title="facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></span>
+									<span class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></span>
 									<?php } ?>
 									<?php if($wl_theme_options['whatsapp_link']!='') { ?>
-									<span class="linkedin" data-toggle="tooltip" data-placement="bottom" title="<?php echo $wl_theme_options['whatsapp_title']; ?>"><a href="tel:<?php echo esc_attr($wl_theme_options['whatsapp_link']) ; ?>"><i class="fa fa-whatsapp"></i></a></span>
+									<span class="linkedin" data-toggle="tooltip" data-placement="bottom" title="whatsapp"><a href="tel:<?php echo esc_attr($wl_theme_options['whatsapp_link']) ; ?>"><i class="fa fa-whatsapp"></i></a></span>
 									<?php } ?>
 							<?php } ?>	
 						</div>
@@ -72,17 +73,8 @@
 						'fallback_cb' => 'weblizar_fallback_page_menu',
 						'walker' => new weblizar_nav_walker(),
 						)
-						);	?>	
-						<div class="hsearch">
-							 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>"> 	
-								<input type="text" class="form-control"  name="s" id="s" placeholder="<?php _e( "Que desirez-vous?", 'enigma' ); ?>" />
-								<span class="input-group-btn">
-									<button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
-								</span>
-							 </form> 
-						</div>					
+						);	?>				
 					</div>	
-					
 				</nav>
 			</div>
 		</div>
